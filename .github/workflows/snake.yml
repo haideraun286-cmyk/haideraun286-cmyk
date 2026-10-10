@@ -1,3 +1,4 @@
+
 name: Generate Contribution Snake
 
 on:
@@ -16,13 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate snake animation
+      - name: Generate Matrix contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=%2300FF41&color_dots=%23000000,%23003300,%23006600,%2300CC33,%2300FF41
+            dist/github-snake-dark.svg?color_snake=%2300FF41&color_dots=%23000000,%23003300,%23006600,%2300CC33,%2300FF41
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
