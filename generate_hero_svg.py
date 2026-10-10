@@ -33,12 +33,11 @@ ABOUT = [
 ]
 
 COL = {"g": "#3fb950", "b": "#79c0ff", "w": "#ffffff", "m": "#8b949e", "y": "#e3b341"}
-BG, BAR, FACE_COL = "#000000", "#364a5c", "#7ee787"
-TITLE = "about_me.cpp"
+BG, FACE_COL = "#000000", "#7ee787"
 
 FACE_FS, FACE_CW, FACE_LH = 9, 5.4, 10.5
 ABOUT_FS, ABOUT_CW, ABOUT_LH = 14, 8.4, 22
-PAD, GAP, TOP = 28, 36, 70
+PAD, GAP, TOP = 28, 36, 34
 
 # speed (seconds) - lower = faster
 FACE_LINE_T = 0.035   # time between face lines appearing
@@ -75,7 +74,7 @@ def main():
     about_h = len(ABOUT) * ABOUT_LH
 
     width = int(PAD + face_w + GAP + about_w + PAD)
-    height = int(TOP + max(face_h, about_h) + 20)
+    height = int(TOP + max(face_h - FACE_LH, about_h - ABOUT_LH) + 30)
     face_x, about_x = PAD, PAD + face_w + GAP
     face_y0 = TOP + (max(face_h, about_h) - face_h) / 2
     fy = lambda i: face_y0 + i * FACE_LH
@@ -117,9 +116,6 @@ def main():
     s = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         f'<rect width="{width}" height="{height}" rx="10" fill="{BG}"/>',
-        f'<path d="M0 10a10 10 0 0 1 10-10h{width - 20}a10 10 0 0 1 10 10v26H0z" fill="{BAR}"/>',
-        '<circle cx="22" cy="18" r="6" fill="#e8604c"/><circle cx="42" cy="18" r="6" fill="#9ad08e"/>',
-        f'<text x="{width / 2}" y="23" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="12">{escape(TITLE)}</text>',
         '<defs>',
     ]
     for i, st in face_clips.items():

@@ -30,7 +30,7 @@ SKILLS = {
 # ------------------------------ look & feel ------------------------------
 SYNTAX_COLORS = False   # False = plain white like a real terminal, True = coloured JSON
 FONT_SIZE, CW, LH = 16, 9.6, 28   # font size, char width (monospace 0.6em), line height
-PAD_X, BAR_H, PAD_TOP = 28, 36, 14
+PAD_X, BAR_H, PAD_TOP = 28, 0, 10
 VISIBLE_LINES = 10                # window shows this many lines before it scrolls
 MIN_WIDTH = 760
 
@@ -41,7 +41,7 @@ LINE_GAP = 0.03
 HOLD = 2.5              # pause at the end before looping
 SEED = 7                # change for a different "typing rhythm"
 
-BG, BAR = "#000000", "#364a5c"
+BG = "#000000"
 WHITE, PROMPT_C = "#ffffff", "#e0a3ff"
 C_KEY, C_STR = "#79c0ff", "#a5d6ff"
 
@@ -91,7 +91,7 @@ def main():
     y = lambda i: BAR_H + PAD_TOP + (i + 1) * LH - 8   # baseline of line i
 
     width = int(max(MIN_WIDTH, max(len(l) for l in code) * CW + 2 * PAD_X))
-    height = BAR_H + PAD_TOP + VISIBLE_LINES * LH + 14
+    height = BAR_H + PAD_TOP + VISIBLE_LINES * LH + 8
 
     cursor = [(0.0, PAD_X + len(prompt) * CW, y(0))]   # (time, x, y)
     scroll = [(0.0, 0)]                                 # (time, offset px)
@@ -138,8 +138,6 @@ def main():
     s = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         f'<rect width="{width}" height="{height}" rx="10" fill="{BG}"/>',
-        f'<path d="M0 10a10 10 0 0 1 10-10h{width - 20}a10 10 0 0 1 10 10v{BAR_H - 10}H0z" fill="{BAR}"/>',
-        '<circle cx="22" cy="18" r="6" fill="#e8604c"/><circle cx="42" cy="18" r="6" fill="#9ad08e"/>',
         '<defs>',
         f'<clipPath id="view"><rect x="0" y="{BAR_H}" width="{width}" height="{height - BAR_H}"/></clipPath>',
     ]
