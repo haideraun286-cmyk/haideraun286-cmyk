@@ -51,17 +51,34 @@
 
 ## Competitive Programming
 
-<p align="center">
-  <a href="https://leetcode.com/u/Aunhaider98/">
-    <img height="200" src="https://leetcard.jacoblin.cool/Aunhaider98?theme=dark&font=Karla&ext=heatmap" alt="LeetCode stats"/>
-  </a>
-</p>
 
-<p align="center">
-  <a href="https://codeforces.com/profile/aunhaider_98">
-    <img height="170" src="https://codeforces-readme-stats.vercel.app/api/card?username=aunhaider_98&theme=dark" alt="Codeforces stats"/>
-  </a>
-</p>
+<h2 align="center">Competitive Programming</h2>
+
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h3>LeetCode</h3>
+      <a href="https://leetcode.com/u/Aunhaider98/">
+        <img
+          src="https://leetcard.jacoblin.cool/Aunhaider98?theme=dark&font=Baloo&ext=heatmap"
+          alt="LeetCode Stats"
+          width="100%"
+        />
+      </a>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h3>Codeforces</h3>
+      <a href="https://codeforces.com/profile/aunhaider_98">
+        <img
+          src="https://codeforces-readme-stats.vercel.app/api/card?username=aunhaider_98"
+          alt="Codeforces Stats"
+          width="100%"
+        />
+      </a>
+    </td>
+  </tr>
+</table>
+
 
 ---
 
