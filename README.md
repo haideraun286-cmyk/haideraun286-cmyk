@@ -39,20 +39,20 @@
 
 <p align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=haideraun286-cmyk&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=haideraun286-cmyk&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Yhaideraun286-cmyk&theme=tokyonight&hide_border=true" alt="Streak"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=haideraun286-cmyk&theme=tokyonight&hide_border=true" alt="Streak"/>
 </p>
 
 ## Contribution Snake
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/haideraun286-cmyk/output/github-snake.svg"/>
-    <img alt="Contribution snake" src="https://raw.githubusercontent.com/haideraun286-cmyk/Yhaideraun286-cmyk/output/github-snake.svg"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/haideraun286-cmyk/haideraun286-cmyk/output/github-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/haideraun286-cmyk/haideraun286-cmyk/output/github-snake.svg"/>
+    <img alt="Contribution snake" src="https://raw.githubusercontent.com/haideraun286-cmyk/haideraun286-cmyk/output/github-snake.svg"/>
   </picture>
 </p>
 
@@ -66,7 +66,7 @@
 
 <p align="center">
   <a href="https://codeforces.com/profile/aunhaider_98">
-    <img height="170" src="https://codeforces-readme-stats.vercel.app/api/card?username=CODEFORCES_HANDLE&theme=dark" alt="Codeforces stats"/>
+    <img height="170" src="https://codeforces-readme-stats.vercel.app/api/card?username=aunhaider_98&theme=dark" alt="Codeforces stats"/>
   </a>
 </p>
 
